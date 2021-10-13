@@ -1,8 +1,12 @@
-import react from 'react';
+import React from 'react';
 
-function Categories(){
+import Button from './Button'
+
+function Categories(props){
     return(
         <div className="categories">
+          <Button ClickB={()=>{console.log("Click")}}/>
+          <button onClick={()=>{console.log("clickB")}}>Click</button>
         <ul>
           <li className="active">Все</li>
           <li>Мясные</li>
